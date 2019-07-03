@@ -1,0 +1,31 @@
+.menu{
+  margin-top: 20px;
+  min-width: 80%;
+  min-height: 40px;
+  display:flex;
+  justify-content: space-between
+}
+
+.previousNextButton{
+  background-color: transparent;
+  border: none;
+  
+  font-size: 30px;
+  color: white;
+}
+
+.crudDiv{
+  display:flex;
+  justify-content: space-around;
+  min-width: 300px;
+}
+
+.crudButton{
+  background-color: #34A5DA;
+  border:none;
+  padding: 5px;
+  /* min-width:  */
+  border-radius: 12px;
+  font-size: 20px;
+
+}

@@ -1,0 +1,44 @@
+.display{
+  margin-top: 50px;
+  background-color: #EBEBEB;
+  min-width: 80%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
+
+.counterDiv{
+  align-self: flex-end;
+  padding-right: 40px;
+}
+.counter{
+  font-size: 40px;
+}
+
+.person{
+  padding-left: 40px;
+}
+
+.person h1{
+  font-size: 40px;
+  text-decoration-line: underline;
+  text-decoration-color: #34A5DA;
+}
+
+.detailTitle{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.person p{
+  font-size: 20px;
+}
+
+.movieList{
+  font-size: 20px;
+  padding: 10px;;
+}
+

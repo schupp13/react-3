@@ -1,0 +1,12 @@
+nav{
+  background-color: #34A5DA;
+  min-height: 10vh;
+  width: 100vw;
+  display: flex;
+}
+
+.home{
+  font-weight: bold;
+  font-size: 30px;
+ margin-left: 5%;
+}
