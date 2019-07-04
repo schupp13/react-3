@@ -23,27 +23,40 @@ class Display extends React.Component {
     
   }
   next=()=>{
-    if(this.state.count < this.state.userInfo.length -1){
+    if(this.state.count < this.state.userInfo.length - 1){
     this.setState({count : this.state.count + 1});
     }else{
       return alert("Can't go any higher");
     }
   }
+
+  delete=()=>{
+    
+    let copyOfUserInfo = [...this.state.userInfo];
+    copyOfUserInfo.splice(this.state.count, 1);
+    this.setState({userInfo: copyOfUserInfo,count: 0}) 
+  }
+
+  new=()=>{
+
+  }
+
+  edit=()=>{
+
+  }
  
-
-
   render() {
     const {userInfo, count} = this.state;
 
-    let viewMovies = this.state.userInfo[this.state.count].favoriteMovies.map(e => {
-      return <li className="movieList">{e}</li>
+    let viewMovies = this.state.userInfo[this.state.count].favoriteMovies.map((e, i) => {
+      return <li key={i}className="movieList">{e}</li>
     })
 
     return (
       <>
       <div className="display">
         <div className="counterDiv">
-        <h1 className="counter">{count+1 +"/" + data.length}</h1>
+        <h1 className="counter">{count+1 +"/" + this.state.userInfo.length}</h1>
       </div>
       <div className='person'>
         <h1 className="name">{userInfo[count].name.first + " " + userInfo[count].name.last} </h1>
@@ -54,7 +67,7 @@ class Display extends React.Component {
       </div>
       </div>
 
-      <Menu count={this.state.count} previous={this.previous} next={this.next}  />
+      <Menu count={this.state.count} previous={this.previous} next={this.next} edit={this.edit} add={this.add} delete={this.delete}/>
       </>
     )
 

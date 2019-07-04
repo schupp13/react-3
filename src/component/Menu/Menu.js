@@ -9,7 +9,7 @@ function Menu(props){
     </div>
     <div className="crudDiv">
       <button className="crudButton" >Edit</button>
-      <button className="crudButton">Delete</button>
+      <button className="crudButton" onClick={props.delete}>Delete</button>
       <button className="crudButton">New</button>
     </div>
     <div className="nextDiv">
