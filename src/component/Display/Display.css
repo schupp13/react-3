@@ -15,6 +15,7 @@
   padding-right: 40px;
 }
 .counter{
+  margin-bottom: 0;
   font-size: 40px;
 }
 
@@ -23,6 +24,7 @@
 }
 
 .person h1{
+  margin-top: 0;
   font-size: 40px;
   text-decoration-line: underline;
   text-decoration-color: #34A5DA;
